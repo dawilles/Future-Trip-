@@ -124,7 +124,7 @@ body {
 	// animation-delay: .3s;
 }
 
-// Header
+// Header@
 .header {
 	position: relative;
 	display: flex;
@@ -165,10 +165,75 @@ body {
 		}
 	}
 }
+// Main================================================
 
-//=================================================================
-//Media
-//=================================================================
+// Dreams Section======================================
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	&__title {
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		font-style: 1.4rem;
+	}
+}
+// Hero images==========================================
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages("../img/church-small.jpg");
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&__title {
+		font-family: "Ms Madi", cursive;
+		font-size: 4.8rem;
+		font-weight: 300;
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		padding: 1em 0;
+	}
+}
+//Media=================================================
+
+@media (min-width: 576px) {
+	.dreams {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 55%;
+
+				&--right {
+					text-align: right;
+				}
+			}
+			&-img {
+				width: 40%;
+
+				&--right {
+					order: 1;
+				}
+			}
+		}
+		&__img {
+			margin-bottom: 0;
+			min-height: 300px;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.white-block {
 		height: 50px;
@@ -185,6 +250,22 @@ body {
 			font-size: 1.6rem;
 		}
 	}
+	.dreams {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+	.hero-img {
+		padding: 30rem 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
 }
 @media (min-width: 992px) {
 	.burger-btn {
@@ -193,8 +274,43 @@ body {
 	}
 	.header {
 		background-image: $blue-gradient, url("../img/island-big.jpg");
+		&__title {
+			font-size: 8.6rem;
+		}
 	}
-	&__title {
-		font-size: 8.6rem;
+	.nav {
+		&__item {
+			font-size: 4.8rem;
+		}
+	}
+	.dreams {
+		&__box {
+			margin: 5em 0;
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
+		&__title {
+			font-size: 3.6rem;
+		}
+		&__text {
+			font-size: 2.3rem;
+		}
+	}
+	.hero-img {
+		padding: 40em 2em;
+		background-image: $blue-gradient, url("../img/church-big.jpg");
+
+		&__title {
+			font-size: 7.2rem;
+		}
+		hr {
+			width: 60%;
+			min-width: 900px;
+		}
 	}
 }
