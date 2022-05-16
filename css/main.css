@@ -14,15 +14,15 @@
 .white-block-left {
   bottom: 0;
   left: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  -webkit-transform: skew(50deg);
+          transform: skew(50deg);
 }
 
 .white-block-right {
   top: 0;
   right: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  -webkit-transform: skew(50deg);
+          transform: skew(50deg);
 }
 
 .btn-special-animation {
@@ -352,6 +352,203 @@ body {
   padding: 1em 0;
 }
 
+.islands__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  color: #fff;
+  text-align: center;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.islands__card:hover .islands__card-img {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0;
+}
+
+.islands__card:hover .islands__card-info {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  opacity: 1;
+}
+
+.islands__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.islands__card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.55), rgba(8, 24, 255, 0.55)), url(../img/greece-small.jpg);
+}
+
+.islands__card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.55), rgba(42, 10, 184, 0.55)), url(../img/phang-small.jpg);
+}
+
+.islands__card-img--third {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.55), rgba(68, 0, 255, 0.55)), url(../img/puertorico-small.jpg);
+}
+
+.islands__card-img-title {
+  font-family: "Ms Madi", cursive;
+  font-size: 2.5rem;
+}
+
+.islands__card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+
+.islands__card-img-info i {
+  margin-right: 0.3em;
+}
+
+.islands__card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  background-image: radial-gradient(circle at top right, #004eff 0%, #00d4ff 100%);
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.islands__card-info-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1em;
+  font-family: "Ms Madi", cursive;
+  font-size: 2.9rem;
+}
+
+.islands__card-info-list {
+  margin: 0 auto;
+  width: 60%;
+  list-style: none;
+}
+
+.islands__card-info-list-item {
+  padding: 0.5em;
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+}
+
+.islands__card-info-list-item:last-child {
+  border-bottom: none;
+}
+
+.islands__card-info-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 2em;
+  padding: 1em;
+  border-radius: 10px;
+  width: 80%;
+  border: none;
+  background-color: #00ffaa;
+  cursor: pointer;
+}
+
+.islands__card-info-btn::before {
+  background-color: #0fe29c;
+}
+
+.offers {
+  position: relative;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.55), rgba(42, 10, 184, 0.55)), url("../img/maldives-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.offers .section-heading {
+  color: #fff;
+}
+
+.offers__option {
+  margin: 1em 0;
+  -webkit-box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.offers__option-img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.offers__option-img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.offers__option-info {
+  padding: 2em;
+}
+
+.offers__option-heading {
+  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.offers__option-text {
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+  color: #2e2e2e;
+}
+
+.offers__option-btn {
+  margin-top: 1em;
+  padding: 0.8em;
+  width: 100%;
+  color: #fff;
+  background-color: #1755e7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.offers__option-btn::before {
+  background-color: #164dcc;
+}
+
 @media (min-width: 576px) {
   .dreams__box {
     -webkit-box-orient: horizontal;
@@ -409,6 +606,20 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
+  .islands__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .islands__card {
+    margin: 1em;
+    width: 45%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -455,8 +666,14 @@ body {
     font-size: 7.2rem;
   }
   .hero-img hr {
-    width: 60%;
+    width: 70%;
     min-width: 900px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .islands__card {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */
