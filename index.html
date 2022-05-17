@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Work+Sans:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://kit.fontawesome.com/583a51d724.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,6 +41,7 @@
     </header>
     <!-- main -->
     <main class="main">
+
         <section class="dreams section-padding section white-section">
             <div class="wrapper">
                 <h2 class="section-heading">Spełniaj marzenia</h2>
@@ -79,7 +81,6 @@
             <hr>
             <p class="hero-img__text">Z nami, czas płynie inaczej...</p>
             <hr>
-
         </section>
 
         <section class="islands section-padding section white-section" id="islands">
@@ -108,7 +109,6 @@
                         </div>
                     </div>
 
-
                     <div class="islands__card" onclick="void(0)">
                         <div class="islands__card-img islands__card-img--second">
                             <h3 class="islands__card-img-title">Wyspy Costa Brawa</h3>
@@ -128,7 +128,6 @@
                             <button class="islands__card-info-btn btn-special-animation">Wybierz</button>
                         </div>
                     </div>
-
 
                     <div class="islands__card" onclick="void(0)">
                         <div class="islands__card-img islands__card-img--third">
@@ -152,6 +151,7 @@
                 </div>
             </div>
         </section>
+
         <section class="offers section-padding section" id="offers">
 
             <div class="white-block white-block-right"></div>
@@ -173,7 +173,6 @@
                             <button class="offers__option-btn btn-special-animation">Wybierz</button>
                         </div>
                     </div>
-
 
                     <div class="offers__option">
                         <img src="./img/dive-small.jpg" alt="nurek nurkuje przy rafie koralowej"
@@ -199,41 +198,112 @@
                             <button class="offers__option-btn btn-special-animation">Wybierz</button>
                         </div>
                     </div>
-
-
-
-
-
-
-
                 </div>
-
-
-
             </div>
-
         </section>
 
+        <section class="reviews section-padding section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+
+                <div class="reviews__boxes">
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/woman1-small.jpg" alt="Anna Kurczek">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veniam doloremque
+                                perspiciatis rem necessitatibus accusantium nemo. Ducimus dolores sint voluptatem.
+                            </p>
+                            <strong>Anna Kurczek</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/woman2-small.jpg" alt="Honorata Miczkowa">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veniam doloremque
+                                perspiciatis rem necessitatibus accusantium nemo. Ducimus dolores sint voluptatem.
+                            </p>
+                            <strong>Honorata Miczkowa</strong>
+                        </div>
+                    </div>
+
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="./img/woman3-small.jpg" alt="Olga Stańczyk">
+                        </div>
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veniam doloremque
+                                perspiciatis rem necessitatibus accusantium nemo. Ducimus dolores sint voluptatem.
+                            </p>
+                            <strong>Olga Stańczyk</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding section white-section">
+
+            <div class="white-block white-block-left"></div>
+            <div class="white-block white-block-right"></div>
+
+            <h2 class="section-heading">Kontakt</h2>
+
+            <div class="wrapper">
+
+                <form class="contact__form">
+
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" id="name" class="contact__form-input">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" id="email" class="contact__form-input">
+                    </div>
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+            </div>
+        </section>
 
 
     </main>
 
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script>
         AOS.init({
             startEvent: 'DOMContentLoaded',
             offset: 200,
             once: true,
         });
-    </script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="./js/slicksettings.js"></script> -->
+        crossorigin="anonymous"></script> -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
