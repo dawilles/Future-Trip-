@@ -124,6 +124,11 @@ body {
 	// animation-delay: .3s;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
 // Header@
 .header {
 	position: relative;
