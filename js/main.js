@@ -15,7 +15,6 @@ const handleNav = () => {
 			nav.classList.remove("nav--active");
 		});
 	});
-
 	handleNavItemsAnimation();
 };
 

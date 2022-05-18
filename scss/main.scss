@@ -91,7 +91,6 @@ body {
 		font-size: 2.8rem;
 		text-decoration: none;
 		color: $pure-white;
-		// transform: translateX(100%);
 
 		&::before {
 			content: "";
@@ -121,7 +120,6 @@ body {
 }
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
-	// animation-delay: .3s;
 }
 
 .black-bars-color,
@@ -478,7 +476,6 @@ body {
 	}
 	&__box-title {
 		margin-bottom: 1em;
-		// padding-left: 1rem;
 		font-size: 3rem;
 		text-transform: uppercase;
 	}
